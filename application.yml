@@ -1,3 +1,30 @@
+spring:
+  application:
+    name: Config-Default
+ 
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+    
+    
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: welcome12#
+    url: jdbc:mysql://localhost:3306/ms_db1
+    username: root
+
+  
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -8,3 +35,4 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
