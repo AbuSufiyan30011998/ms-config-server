@@ -1,7 +1,7 @@
 spring:
   mvc:
     pathmatch:
-      matching-strategy: ant-path-matcher
+      matching-strategy: ant_path_matcher
 
     
   datasource:
